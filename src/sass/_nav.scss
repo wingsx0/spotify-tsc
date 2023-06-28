@@ -1,0 +1,66 @@
+.nav {
+  &-header {
+    width: 280px;
+    height: 120px;
+    background-color: $bg-black1;
+    border-radius: $rounders8;
+    padding: 12px 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-bottom: 8px;
+    &-item {
+      display: flex;
+      align-items: center;
+      column-gap: 22px;
+      width: 232px;
+      height: 40px;
+      & .icon-home {
+        color: white;
+        font-size: 16px;
+      }
+      & a {
+        font-size: 20px;
+        color: $text-gray;
+        font-weight: 700;
+      }
+    }
+  }
+  &-library {
+    background-color: $bg-black1;
+    width: 280px;
+    height: 317px;
+    border-radius: $rounders8;
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 280px;
+      height: 56px;
+      padding: 8px 16px;
+      color: $text-gray;
+      &-left {
+        display: flex;
+        column-gap: 10px;
+        & h3 {
+          font-size: 20px;
+          font-weight: 700;
+        }
+        cursor: pointer;
+      }
+      &-plus {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.25s linear;
+        &:hover {
+          background-color: #1a1a1a;
+        }
+      }
+    }
+  }
+}
