@@ -1,4 +1,7 @@
 .nav {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
   &-header {
     width: 280px;
     height: 120px;
@@ -10,27 +13,36 @@
     row-gap: 16px;
     margin-bottom: 8px;
     &-item {
-      display: flex;
-      align-items: center;
-      column-gap: 22px;
       width: 232px;
       height: 40px;
-      & .icon-home {
-        color: white;
-        font-size: 16px;
+      color: $text-gray;
+      & div {
+        display: flex;
+        align-items: center;
+        column-gap: 22px;
+        & i {
+          font-size: 20px;
+        }
+        & p {
+          color: $text-gray;
+          font-size: 20px;
+          font-weight: 700;
+          margin: 0;
+        }
       }
-      & a {
-        font-size: 20px;
-        color: $text-gray;
-        font-weight: 700;
+      &:hover {
+        color: white;
+        & p {
+          color: white;
+        }
       }
     }
   }
   &-library {
-    background-color: $bg-black1;
     width: 280px;
+    background-color: $bg-black1;
     height: 317px;
-    border-radius: $rounders8;
+    border-radius: 8px 8px 0 0;
     &-top {
       display: flex;
       justify-content: space-between;
@@ -60,6 +72,83 @@
         &:hover {
           background-color: #1a1a1a;
         }
+      }
+    }
+    &-content {
+      height: 261px;
+      padding: 8px;
+      overflow-y: scroll;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+      position: relative;
+      // scroll
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        position: absolute;
+        width: 12px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+      }
+      &:hover {
+        &::-webkit-scrollbar-thumb {
+          background: rgba($color: $text-gray, $alpha: 0.5);
+        }
+      }
+      & .content-box {
+        background-color: #242424;
+        border-radius: $rounders8;
+        padding: 20px 16px;
+        & p {
+          margin-bottom: 8px;
+          font-size: 16px;
+          font-weight: 700;
+          width: 224px;
+        }
+        & button {
+          height: 22px;
+          padding: 16px;
+          background-color: #fff;
+          border-radius: 100px;
+          font-size: 14px;
+          font-weight: 700;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 20px;
+        }
+      }
+    }
+    &-footer {
+      height: 218px;
+      width: 100%;
+      background-color: $bg-black1;
+      padding: 32px 24px;
+      border-radius: 0 0 8px 8px;
+      &-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 24px 0;
+        margin-bottom: 32px;
+        & span {
+          font-size: 11px;
+          color: $text-gray;
+        }
+      }
+      & .nav-footer-button {
+        width: 95px;
+        height: 32px;
+        padding: 4px 12px;
+        border: 1px solid white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 3px;
+        border-radius: 100px;
+        color: white;
       }
     }
   }
