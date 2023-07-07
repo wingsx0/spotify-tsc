@@ -16,23 +16,23 @@
       width: 232px;
       height: 40px;
       color: $text-gray;
+      cursor: pointer;
       & div {
         display: flex;
         align-items: center;
         column-gap: 22px;
+        color: $text-gray;
         & i {
           font-size: 20px;
         }
         & p {
-          color: $text-gray;
           font-size: 20px;
           font-weight: 700;
           margin: 0;
         }
       }
       &:hover {
-        color: white;
-        & p {
+        & div {
           color: white;
         }
       }
@@ -152,4 +152,13 @@
       }
     }
   }
+}
+
+// active
+.home-link.active {
+  color: white;
+}
+
+.search-link.active {
+  color: white;
 }

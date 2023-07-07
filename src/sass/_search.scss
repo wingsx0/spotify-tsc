@@ -1,0 +1,65 @@
+.search {
+  &-list {
+    &-header {
+      margin-top: 48px;
+      font-size: 24px;
+      font-weight: 900;
+      margin-bottom: 22px;
+    }
+    &-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 20px;
+    }
+    &-card {
+      width: 218px;
+      height: 218px;
+      border-radius: $rounders8;
+      position: relative;
+      cursor: pointer;
+      & h5 {
+        font-size: 24px;
+        font-weight: 900;
+        padding-top: 16px;
+        margin-left: 16px;
+      }
+      & img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      &:nth-child(1) {
+        background-color: #27856a;
+      }
+      &:nth-child(2) {
+        background-color: #1e3264;
+      }
+      &:nth-child(3) {
+        background-color: #8d67ab;
+      }
+      &:nth-child(4) {
+        background-color: #e8115b;
+      }
+      &:nth-child(5) {
+        background-color: #8d67ab;
+      }
+      &:nth-child(6) {
+        background-color: #7358ff;
+      }
+      &:nth-child(7) {
+        background-color: #b49bc8;
+      }
+      &:nth-child(8) {
+        background-color: #148a08;
+      }
+      &:nth-child(9) {
+        background-color: #f037a5;
+      }
+      &:nth-child(10) {
+        background-color: #8d67ab;
+      }
+    }
+  }
+}
