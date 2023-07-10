@@ -78,6 +78,27 @@
       align-items: center;
     }
   }
+  &-search {
+    position: relative;
+    & input {
+      width: 364px;
+      height: 48px;
+      border: none;
+      background-color: #242424;
+      padding: 16px 15px 16px 32px;
+      border-radius: 100px;
+      color: white;
+      &:focus {
+        border: 3px solid white;
+      }
+    }
+    & i {
+      position: absolute;
+      top: 50%;
+      left: 11px;
+      transform: translateY(-50%);
+    }
+  }
   &-nav {
     &-left {
       display: flex;
