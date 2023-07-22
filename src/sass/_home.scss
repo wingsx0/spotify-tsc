@@ -1,33 +1,3 @@
-// tag
-.tag {
-  width: 100%;
-  height: 67px;
-  background: $linear1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 15px;
-  &-text {
-    & p {
-      font-size: 16px;
-    }
-    &-header {
-      font-weight: 300;
-      font-size: 12px;
-      text-transform: uppercase;
-      margin-bottom: 5px;
-    }
-  }
-  & button {
-    width: 160px;
-    height: 50px;
-    background-color: #f6f6f6;
-    padding: 8px 32px;
-    border-radius: 100px;
-    font-weight: 700;
-  }
-}
-
 // home
 .home-wapper {
   display: flex;
@@ -76,6 +46,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
     }
   }
   &-search {
@@ -180,6 +151,7 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 22px;
+      cursor: pointer;
       & h3 {
         font-weight: 700;
         font-size: 24px;
@@ -308,6 +280,135 @@
         font-size: 14px;
         color: #a7a7a7;
         margin-bottom: 72px;
+      }
+    }
+  }
+}
+
+// tag
+.signup-tag {
+  width: 100%;
+  height: 67px;
+  background: $linear1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  &-text {
+    & p {
+      font-size: 16px;
+    }
+    &-header {
+      font-weight: 300;
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+  }
+  & button {
+    width: 160px;
+    height: 50px;
+    background-color: #f6f6f6;
+    padding: 8px 32px;
+    border-radius: 100px;
+    font-weight: 700;
+  }
+}
+
+.control-tag {
+  display: flex;
+  align-items: center;
+  row-gap: 15px;
+  justify-content: space-between;
+  color: white;
+  height: 72px;
+  width: 100%;
+  overflow: hidden;
+  &-left {
+    display: flex;
+    align-items: center;
+  }
+  & .image {
+    width: 56px;
+    height: 56px;
+    border-radius: $rounders8;
+    margin-right: 10px;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: inherit;
+    }
+  }
+  & .info {
+    line-height: 22.4px;
+    display: flex;
+    flex-direction: column;
+    & .name-song {
+      font-size: 14px;
+      color: white;
+      font-weight: 500;
+    }
+    & .author {
+      color: #a7a7a7;
+      font-size: 11px;
+    }
+  }
+  & .icons {
+    display: flex;
+    column-gap: 16px;
+    margin-left: 22px;
+    color: #a7a7a7;
+    font-size: 20px;
+    & * {
+      cursor: pointer;
+    }
+  }
+  & .player-control {
+    height: 56px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 15px;
+    & .hidden-visually {
+      opacity: 0;
+      visibility: hidden;
+      display: none;
+    }
+    & .buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 16px;
+      font-size: 20px;
+      & button {
+        width: 32px;
+        height: 32px;
+        & i {
+          color: #a7a7a7;
+        }
+      }
+      & .play-button {
+        & i {
+          font-size: 32px;
+          color: white;
+        }
+      }
+    }
+    & .playback-bar {
+      font-size: 11px;
+      color: #a7a7a7;
+      display: flex;
+      column-gap: 8px;
+    }
+    & .progress-bar {
+      background-color: transparent;
+      border-radius: 100px;
+      &-background {
+        width: 506px;
+        height: 4px;
+        background-color: #a7a7a7;
       }
     }
   }

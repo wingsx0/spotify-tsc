@@ -1,9 +1,8 @@
 var searchLink = document.querySelector(".search-link");
 var homeLink = document.querySelector(".home-link");
-console.log(homeLink);
-console.log(searchLink);
+var loginLink = document.querySelector(".button-login");
+var singupLink = document.querySelector(".button-signup");
 var indexUrl = window.location.href;
-console.log(indexUrl);
 // rounter home
 homeLink === null || homeLink === void 0 ? void 0 : homeLink.addEventListener("click", function () {
     if (indexUrl === "http://127.0.0.1:5500/src/view/search.html") {
@@ -15,4 +14,12 @@ searchLink === null || searchLink === void 0 ? void 0 : searchLink.addEventListe
     if (indexUrl === "http://127.0.0.1:5500/src/view/index.html") {
         location.href = "../view/search.html";
     }
+});
+// rounter login
+loginLink === null || loginLink === void 0 ? void 0 : loginLink.addEventListener("click", function () {
+    location.href = "../view/login.html";
+});
+// rounter signup
+singupLink === null || singupLink === void 0 ? void 0 : singupLink.addEventListener("click", function () {
+    location.href = "../view/signup.html";
 });

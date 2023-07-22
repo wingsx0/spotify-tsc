@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "wings",
+      "password": "1234",
+      "avatar": "",
+      "date": "february 21, 2003",
+      "country": "vietnam",
+      "premium": true
+    }
+  ],
+  "song": [
+    {
+      "id": 1,
+      "name": "ngtanoise",
+      "artist": "vsoul",
+      "imageMusic": "url",
+      "date": "monday,Steptember 12, 2022",
+      "category": ["vietnam", "pop", "rab"],
+      "link": ""
+    },
+    {
+      "id": 2,
+      "name": "Chìm Sâu",
+      "artist": "MCK",
+      "imageMusic": "url",
+      "date": "monday,Steptember 12, 2022",
+      "category": ["vietnam", "pop", "rab"]
+    }
+  ]
+}
