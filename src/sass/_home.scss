@@ -135,13 +135,11 @@
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    position: relative;
     scroll-behavior: smooth;
     &::-webkit-scrollbar {
       position: absolute;
-      width: 12px;
-    }
-    &::-webkit-scrollbar-thumb {
-      background: rgba($color: $text-gray, $alpha: 0.5);
+      display: none;
     }
   }
   &-list {
